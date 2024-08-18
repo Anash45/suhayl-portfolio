@@ -329,6 +329,10 @@ nav {
   text-align: center;
 }
 
+.hire a{
+  color: inherit;
+}
+
 /* foooter csss */
 .footer {
   background-color: #FF9900;
