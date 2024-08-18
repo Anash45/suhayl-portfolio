@@ -1,0 +1,984 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Pecita";
+  src: url(../fonts/Pecita.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F1EFFF;
+  font-family: "Inter", sans-serif;
+}
+ul{
+  list-style-type: none;
+}
+a:hover{
+  cursor: pointer;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.archivo {
+  font-family: "Archivo", sans-serif;
+}
+
+nav {
+  background-color: #000000;
+}
+
+
+.bg-nav {
+  background-color: #3F348F;
+}
+
+/* dropdown css */
+.dropdown-menu {
+
+  background-color: #3F348F;
+  padding-top: 30px;
+  /* Adjust padding to accommodate the close icon */
+  width: 422px;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+
+}
+
+.dropdown-close-icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #ffffff;
+  z-index: 1;
+  /* Ensure it stays on top */
+}
+
+.dropdown-item {
+  color: #ffffff;
+  padding: 10px 40px;
+}
+
+.dropdown-item:hover {
+  background-color: #3F348F;
+  color: rgb(177, 189, 199)
+}
+
+.dropdown-item p {
+  margin: 0;
+}
+
+.item-up {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.item-dn {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.px {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  display: flex;
+  font-weight: 400;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.px p {
+  margin-bottom: 0;
+}
+
+.drop {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.secpad {
+  padding: 20px 20px;
+}
+
+/* section hero css */
+.hero {
+  position: relative;
+  background-color: black;
+  background-image: url(/assets/images/hero.png);
+  background-repeat: no-repeat;
+  background-size: auto 520px;
+  background-position: bottom right;
+
+}
+
+.bg-logo {
+  height: 400px;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(336deg) translateY(-58%);
+  opacity: 0.1;
+  width: fit-content;
+  top: 50%;
+  left: 130px;
+}
+
+.hero-heading {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 96px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.hero-contain {
+  padding-bottom: 60px;
+}
+
+.text-position {
+  color: #FF9900;
+  width: fit-content;
+  top: 57%;
+  right: 0;
+}
+
+.bg-1 {
+  color: #ffffff;
+}
+
+.hero-text {
+  padding: 150px 0;
+  color: white;
+  width: 580px;
+  max-width: 100%;
+  z-index: 2;
+}
+
+.hero-text p {
+  width: 440px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  padding-top: 60px;
+}
+
+.brands {
+  width: 20%;
+  padding: 20px 0;
+  text-align: center;
+  margin: auto 0;
+}
+
+.brands img {
+  width: 170px;
+}
+
+.brands-logo {
+  padding: 120px 0;
+}
+
+.chevron {
+  padding: 50px 0;
+}
+
+.about {
+  background-color: #3F348F;
+}
+
+.about-container {
+  padding: 100px 0;
+}
+
+.about-image {
+  object-fit: contain;
+}
+
+.about-image img {
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.about-heading {
+  font-size: 120px;
+  font-weight: 700;
+  color: #FF9900;
+  padding-bottom: 10px;
+}
+
+.first {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.second {
+  font-size: 12px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.about-links {
+  font-size: 32px;
+  font-weight: 500;
+  color: #ff9900;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.num {
+  font-size: 64px;
+  font-weight: 700;
+  color: #ff9900;
+  margin: 0;
+}
+
+.para-text {
+  font-size: 13px;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.text-align {
+  align-items: center;
+}
+
+.i-do {
+  text-align: center;
+  padding: 130px 0;
+}
+
+.main-category {
+  border-left: 2px solid #ffffff;
+  color: #ffffff;
+  height: 145px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-category h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 37px;
+  font-weight: 500;
+
+}
+
+.sub {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.hire {
+  font-size: 32px;
+  font-weight: 500;
+  color: #FF9900;
+  padding-bottom: 140px;
+  text-align: center;
+}
+
+/* foooter csss */
+.footer {
+  background-color: #FF9900;
+  height: 860px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.footer .social-media a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+.touch a {
+  text-decoration: none;
+  color: #3F348F;
+  font-family: "Inter", sans-serif;
+
+}
+
+.touch a {
+  padding-top: 60px;
+  display: inline-block;
+}
+
+.touch h2 {
+  font-size: 90px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.touch img {
+  height: 100px;
+}
+
+
+/* Style for the carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(46%) sepia(92%) saturate(1905%) hue-rotate(348deg) brightness(100%) contrast(97%);
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+}
+
+/* Hide controls on first and last slide */
+.carousel-item:first-child .carousel-control-prev,
+.carousel-item:last-child .carousel-control-next {
+  display: none;
+}
+
+/* Style for the carousel indicators */
+.carousel-indicators [data-bs-target] {
+  background-color: transparent;
+  border: 2px solid #ff9900;
+  border-radius: 50%; /* Make the indicators circular */
+  width: 12px;  /* Set the width */
+  height: 12px; /* Set the height */
+  margin: 1px;  /* Adjust the spacing */
+}
+.carousel-indicators{
+  margin-bottom: -1rem;
+}
+
+/* Style for the active indicator */
+.carousel-indicators .active {
+  background-color: #ff9900;
+  border-color: #ff9900;
+}
+.carousel-para{
+  font-size: 24px;
+  font-weight: 400;
+  color: #3F348F;
+}
+.tag-head{
+  font-size: 24px;
+  font-weight: 700;
+  color:#ff9900;
+}
+.tagline{
+  font-size: 16px;
+  font-weight: 300;
+  color: #ff9900;
+}
+.pecita {
+  font-family: 'Pecita', Courier, monospace;
+}
+/* services page css */
+.craft img{
+height: 338px;
+object-fit: cover;
+border-radius: 10px;
+width: 100%;
+}
+.craft-heading{
+  font-size: 64px;
+  font-weight: 700;
+  color: #FF9900;
+}
+.craft-content p{
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.print-content{
+  width: 65%;
+}
+.print{
+  padding: 170px 0;
+}
+
+.print-content p{
+  font-size: 16px;
+  font-weight: 300;
+  color: #231F20;
+}
+
+.service{
+  background-color: #3F348F;
+}
+.ser-main{
+  padding: 100px 0 70px;
+}
+.parent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.card-one{
+  width: 30%;
+  padding-bottom:10px ;
+}
+.card-two{
+  width: 35%;
+  padding-bottom:10px ;
+}
+.price-card{
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.print-card{
+  background-color: #3F348F;
+  border-radius: 5px;
+}
+.p-color{
+  color: #ffffff !important;
+}
+.card-heading{
+  background-color: #FF9900;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+.suit{
+  margin-bottom: 105px;
+}
+.card-para{
+  font-size: 12px;
+  font-weight: 300;
+  color: #231F20;
+  text-align: justify;
+}
+.starting{
+  color: #3F348F; font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.para-sm{
+  font-size: 10px;
+  font-weight: 300;
+  color: #231F20;
+}
+.card-para-sm{
+  text-align: center;
+}
+.para-pad{
+  padding-bottom: 60px;
+}
+.suitable{
+  font-size: 20px;
+  font-weight: 600;
+  color: #3F348F;
+  padding-top: 50px;
+}
+.rupees{
+  font-size: 55px;
+  font-weight: 700;
+  color: #ff9900
+}
+.popular{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.popular p{
+  font-size: 14px;
+  font-weight: 700;
+  color: #5FA647;
+}
+.line{
+  color: #FF9900;
+  border: 1px solid #FF9900;
+  opacity: 1;
+}
+.price-list{
+  color: #454545;
+  font-size: 13px;
+  font-weight: 300;
+}
+.price-list p{
+  margin-bottom: 5px;
+}
+.card-link{
+  width: 100%;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  text-align: center ;
+  padding: 15px 0;
+  border-radius: 10px;
+}
+.orange{
+  background-color: #FF9900;
+  margin-bottom: 10px;
+}
+.purple{
+  background-color: #3F348F;
+  margin-bottom: 10px;
+}
+.custom{
+  margin-bottom: 70px;
+}
+.green{
+  background-color: #38B445;
+  margin-bottom: 10px;
+}
+.chevron-ser{
+  padding: 120px 0;
+}
+.print-heading{
+  font-size: 96px;
+  font-weight: 700;
+  color: #FF9900;
+}
+/* lazeeza and other pages like this page css */
+.title {
+  padding: 80px 0 28px;
+  font-size: 48px;
+  font-weight: 600;
+  color: #2C042E;
+}
+
+
+
+.content-padding p {
+  margin-bottom: 0;
+  padding-top: 45px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #2C042E;
+}
+
+.content-padding h3 {
+  color: #3F348F;
+}
+
+.blue {
+  color: #2C042E;
+
+}
+
+.image {
+  height: 461px;
+  object-fit: cover;
+  padding: 5px 5px;
+}
+
+.image-two {
+  height: 764px;
+  object-fit: cover;
+  padding: 5px 5px;
+}
+
+.image-three {
+  height: 558px;
+  object-fit: cover;
+  padding: 5px 5px;
+}
+
+.image-four {
+  height: 399px;
+  object-fit: cover;
+  padding: 5px 5px;
+}
+
+.pic-height {
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.pro-button {
+  padding: 10% 0;
+}
+
+.para {
+  padding-bottom: 50px;
+}
+
+.project {
+  height: 41px;
+  width: 182px;
+  border: 1px solid #3F348F;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.project a {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3F348F;
+  text-decoration: none;
+
+}
+
+.active-design {
+  height: 475px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 110px;
+  object-fit: cover;
+  object-fit: contain;
+}
+
+.active-design img {
+
+  width: 100%;
+}
+
+@media (max-width:1200px) {
+  .image {
+    height: 400px;
+  }
+
+  .brands {
+    width: 25%;
+  }
+
+  .brands-logo {
+    padding: 100px 0;
+  }
+
+  .about-image img {
+    height: 450px;
+  }
+
+  .about-heading {
+    font-size: 110px;
+    padding-bottom: 8px;
+  }
+
+  .first {
+    font-size: 22px;
+  }
+
+  .second {
+    font-size: 11px;
+  }
+
+  .about-links {
+    font-size: 30px;
+    padding: 4px 10px;
+  }
+
+  .main-category {
+    width: 50%;
+    height: 130px;
+    margin-bottom: 80px;
+  }
+
+  .about-container {
+    padding: 80px 0;
+  }
+  .ser-main{
+    padding: 80px 0 60px;
+  }
+  .craft-heading{
+    font-size: 55px;
+  }
+  .card-one{
+    width: 50%;
+  }
+  .card-two{
+    width: 50%;
+  }
+  .print-content{
+    width: 50%;
+  }
+  .print-heading{
+    font-size: 80px;
+  }
+  .chevron-ser{
+    padding: 100px 0;
+  }
+  .print{
+    padding: 140px 0;
+  }
+
+}
+
+@media (max-width:992px) {
+  .image {
+    height: 350px;
+  }
+
+  .brands {
+    width: 33.33%;
+  }
+
+  .brands-logo {
+    padding: 90px 0;
+  }
+
+  .about-image img {
+    height: 500px;
+  }
+
+  .about-heading {
+    font-size: 100px;
+    padding-bottom: 5px;
+  }
+
+  .first {
+    font-size: 22px;
+  }
+
+  .second {
+    font-size: 11px;
+  }
+
+  .about-links {
+    font-size: 30px;
+    padding: 3px 10px;
+  }
+
+  .about-container {
+    padding: 60px 0;
+  }
+
+  .i-do {
+    text-align: center;
+    padding: 80px 0;
+  }
+
+  .num {
+    font-size: 40px;
+  }
+  .ser-main{
+    padding: 60px 0 50px;
+  }
+  .popular p{
+    display: none;
+  }
+  .res{
+    padding-top: 10px;
+  }
+  .print-heading{
+    font-size: 60px;
+  }
+}
+
+@media (max-width:768px) {
+  .touch h2 {
+    font-size: 60px;
+    gap: 0;
+  }
+
+  .touch img {
+    height: 60px;
+  }
+
+  .footer {
+    height: 560px;
+  }
+
+  .hero-heading {
+    font-size: 70px;
+  }
+
+  .bg-logo {
+    display: none;
+  }
+
+  .hero-text {
+    padding: 41px 0 365px;
+  }
+
+  .title {
+    padding: 45px 0 14px;
+    font-size: 35px;
+  }
+
+  .para {
+    padding-bottom: 30px;
+  }
+
+  .content-padding p {
+    padding-top: 10px;
+  }
+
+  .image {
+    height: 300px;
+  }
+
+  .brands {
+    width: 50%;
+  }
+
+  .brands-logo {
+    padding: 65px 0;
+  }
+
+  .about-image img {
+    height: 500px;
+    padding: 0;
+  }
+
+  .about-heading {
+    font-size: 80px;
+    padding-bottom: 5px;
+  }
+
+  .first {
+    font-size: 22px;
+  }
+
+  .second {
+    font-size: 11px;
+  }
+
+  .about-links {
+    font-size: 25px;
+    width: 50%;
+  }
+
+  .about-container {
+    padding: 40px 0;
+  }
+  .ser-main{
+    padding: 30px 0 40px;
+  }
+  .card-one{
+    width: 100%;
+  }
+  .card-two{
+    width: 100%;
+  }
+  .print-content{
+    width: 100%;
+  }
+  .chevron-ser{
+    padding: 60px 0;
+  }
+  .print{
+    padding: 100px 0;
+  }
+}
+
+
+@media (max-width:576px) {
+  .touch h2 {
+    font-size: 40px;
+    gap: 0;
+  }
+
+  .touch img {
+    height: 40px;
+  }
+
+  .hero-text p {
+    width: 100%;
+  }
+
+  .image {
+    height: 25 0px;
+  }
+
+  .active-design {
+    height: 300px;
+
+    padding-top: 60px;
+
+  }
+
+  .brands {
+    width: 100%;
+  }
+
+  .brands-logo {
+    padding: 50px 0;
+  }
+
+  .about-links {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .text-align {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main-category {
+    width: 100%;
+    height: 110px;
+    margin-bottom: 60px;
+  }
+
+  .about-container {
+    padding: 20px 0;
+  }
+
+  .i-do {
+    text-align: center;
+    padding: 60px 0;
+  }
+  .chevron-ser{
+    padding: 40px 0;
+  }
+  .print{
+    padding: 60px 0;
+  }
+  .carousel-content{
+    width: 60%;
+  }
+}
