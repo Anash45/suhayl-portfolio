@@ -5,7 +5,12 @@
   src: url(../fonts/Pecita.otf);
 }
 
+::selection {
+  background-color: #FF9900;
+}
+
 * {
+  user-select: #fff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -42,8 +47,8 @@ nav {
 }
 
 /* dropdown css */
-.dropdown-menu {
-
+.side-nav {
+  position: fixed;
   background-color: #3F348F;
   padding-top: 30px;
   /* Adjust padding to accommodate the close icon */
@@ -51,7 +56,22 @@ nav {
   right: 0;
   top: 0;
   border-radius: 0;
+  height: 100%;
+  overflow: auto;
+  scrollbar-width: none;
+  transform: translateX(100%);
+  transition: 0.3s ease-in-out;
+}
 
+.slide-nav {
+  transform: translateX(0);
+}
+
+.dropdown-menu {
+  display: block;
+  border: 0 !important;
+  position: static;
+  background-color: transparent;
 }
 
 .dropdown-close-icon {
@@ -71,9 +91,17 @@ nav {
   padding: 10px 40px;
 }
 
+.content-padding h3 {
+  font-size: 20px;
+}
+
+.content-padding .blue {
+  font-size: 16px;
+}
+
 .dropdown-item:hover {
-  background-color: #3F348F;
-  color: rgb(177, 189, 199)
+  background-color: transparent;
+  color: #FF9900;
 }
 
 .dropdown-item p {
@@ -110,7 +138,8 @@ nav {
   transition: 0.3s ease-in-out;
 }
 
-.px:hover, .drop:hover{
+.px:hover,
+.drop:hover {
   color: #3F348F;
   background-color: #ffffff;
 }
@@ -230,6 +259,14 @@ nav {
   padding: 100px 0;
 }
 
+.hero-gradient {
+  background-image: linear-gradient(120deg, #ffffff 64%, #ffffff1f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
 .about-image {
   object-fit: contain;
 }
@@ -239,6 +276,7 @@ nav {
   width: 100%;
   border-radius: 20px;
   object-fit: cover;
+  filter: grayscale(1);
 }
 
 .about-heading {
@@ -252,6 +290,7 @@ nav {
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
+  line-height: 120%;
 }
 
 .second {
@@ -266,6 +305,12 @@ nav {
   color: #ff9900;
   text-decoration: none;
   padding: 5px 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.about-links:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .num {
@@ -329,7 +374,7 @@ nav {
   text-align: center;
 }
 
-.hire a{
+.hire a {
   color: inherit;
 }
 
@@ -345,7 +390,7 @@ nav {
 .footer .social-media {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 28px;
   padding-bottom: 40px;
   flex-wrap: wrap;
 }
@@ -356,6 +401,11 @@ nav {
   font-size: 15px;
   font-family: "Inter", sans-serif;
   font-weight: 300;
+  transition: 0.3s ease-in-out;
+}
+
+.footer .social-media a:hover {
+  color: #ffffff;
 }
 
 .touch a {
@@ -365,9 +415,27 @@ nav {
 
 }
 
+.touch svg {
+  height: 110px;
+  width: 96px;
+}
+
+.touch path {
+  transition: 0.3s ease-in-out;
+}
+
 .touch a {
   padding-top: 60px;
   display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+.touch a:hover {
+  color: #ffffff;
+}
+
+.touch a:hover svg path {
+  fill: #ffffff;
 }
 
 .touch h2 {
@@ -681,19 +749,19 @@ nav {
 }
 
 .image {
-  height: 461px;
+  height: 515px;
   object-fit: cover;
   padding: 5px 5px;
 }
 
 .image-two {
-  height: 764px;
+  height: 895px;
   object-fit: cover;
   padding: 5px 5px;
 }
 
 .image-three {
-  height: 558px;
+  height: 595px;
   object-fit: cover;
   padding: 5px 5px;
 }
@@ -737,7 +805,7 @@ nav {
   text-decoration: none;
 }
 
-.project:hover{
+.project:hover {
   color: #ffffff;
   background-color: #3F348F;
 }

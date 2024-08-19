@@ -1,8 +1,12 @@
 // Close the dropdown when the cross icon is clicked
-$('#open-menu').on('click', function () {
-  $('#right-menu').fadeIn();
+function openMenu(e) {
+  e.preventDefault();
+  $('.side-nav').addClass('slide-nav');
+}
+$('#open-menu').on('click', function (e) {
+  openMenu(e);
 })
 
 $('#close-menu').on('click', function () {
-  $('#right-menu').fadeOut();
+  $('.side-nav').removeClass('slide-nav');
 })
